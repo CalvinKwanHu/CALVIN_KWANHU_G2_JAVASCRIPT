@@ -1,0 +1,223 @@
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    background-color: rgb(21, 33, 32);
+    margin: 0 auto;
+}
+
+/* home_end */
+
+.home_end {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+}
+
+.home_end a {
+    border: 2px solid rgb(218, 193, 118);
+    color: rgb(218, 193, 118);
+    font-size: 1rem;
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Animation fluide */
+    display: inline-block; /* Garde une bonne taille */
+}
+
+.home_end a:hover {
+    background: rgb(218, 193, 118);
+    color: white;
+}
+
+.light-mode .home_end a:hover {
+    background: rgb(218, 193, 118);
+    color: white;
+}
+
+/* bg_top_img */
+
+.bg_top_img {
+    position: relative;
+    height: 86vh;
+}
+
+.bg_top_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*ne déforme pas l'image */
+}
+
+/* logo_bottom */
+
+.logo_bottom {
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*décale vers le milieu du left*/
+    z-index: 1;
+    /* calque */
+    max-width: 500px;
+}
+
+/* title_top_page */
+
+.title_top_page {
+    position: relative;
+}
+
+/* perso_classe_txt */
+
+.perso_classe_txt {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.perso_classe_txt img {
+    width: 30%;
+    height: 30%;
+    margin-left: 11%;
+}
+
+/* carre */
+
+.carre {
+    background: linear-gradient(rgba(42, 53, 50, 1), rgba(59, 70, 67, 1));
+    width: 200px;
+    height: 300px;
+    background-color: aquamarine;
+    border-radius: 5% 15% 5% 15% / 5% 15% 5% 15%;
+    margin: 90px auto 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.carre img {
+    border-radius: 5% 16.9% 5% 15% / 5% 16.9% 5% 15%;
+}
+
+.carre:hover {
+    transform: scale(1.2);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Light Mode */
+
+.light-mode {
+    background-color: white;
+    color: black; /* Le texte devient noir */
+}
+
+.light-mode .perso_classe_txt {
+    color: black;
+}
+
+.light-mode .carre {
+    background: linear-gradient(rgba(200, 200, 200, 1), rgba(230, 230, 230, 1));
+}
+
+/* Toggle Mode */
+
+#toggle-mode {
+    background: none;
+    border: 2px solid rgb(218, 193, 118);
+    color: rgb(218, 193, 118);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#toggle-mode:hover {
+    background: rgb(218, 193, 118);
+    color: white;
+}
+
+
+/* Formulaire */
+
+.form-container {
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form input.error {
+    border-color: red;
+}
+
+.signup-form input.valid {
+    border-color: green;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Message (erreur) */
+
+#message {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Bouton (inscription */
+
+button {
+    background-color: rgb(218, 193, 118);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: rgb(180, 150, 90);
+}
+
+.light-mode .form-container {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+/* Questions box */
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+}

@@ -1,0 +1,48 @@
+span {
+    color: rgb(218, 193, 118);
+}
+
+p {
+    color: white;
+    font-weight: bold;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.citation_classe {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+
+.light-mode p {
+    color: black;
+}
+
+.light-mode .content_container {
+    background-color: rgba(200, 200, 200, 1);
+}
+
+.border_leaf img {
+    height: 140%;
+    width: 140%;
+}
+
+.content_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*Permet une meilleure visibilité des l'image des feuilles*/
+    margin: 20px 10%;
+    /*Rend le carré plus petit*/
+    padding: 20px;
+    /* Permet de ne pas coller les bourdures de la box*/
+    background-color: rgba(42, 53, 50, 0.8);
+    border-radius: 10px;
+}
+
+.border_leaf {
+    max-width: 60%;
+}

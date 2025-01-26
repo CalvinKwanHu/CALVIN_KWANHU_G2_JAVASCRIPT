@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Elden Ring Classes</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="title_top_page">
+            <div class="bg_top_img">
+                <div class="home_end">
+                    <a href="formulaire.html" title="Envoie au formulaire"> <b>SIGN-IN | LOGIN</b> </a>
+                    <button id="toggle-mode"> <b>LIGHT MODE</b></button>
+                    <a href="index.html" title="Renvoie à l'index"> <b>HOME</b> </a>
+                </div>
+                <img src="img/homepage/elden_ring_home_page.jpg" width="1920" height="1080" alt="Elden Ring Home Page">
+            </div>
+            <img src="img/homepage/elden_ring_logo.png" alt="Elden Ring Logo" class="logo_bottom">
+        </div>
+
+        <div class="perso_classe_txt">
+            <p>SIGN-IN | LOGIN</p>
+            <img src="img/homepage/elden_ring_underline.png" alt="Elden Ring Underline">
+        </div>
+
+    </section>
+
+    <section class="form-container">
+        <form id="sign-up-form" class="signup-form">
+            <label for="username">Pseudo :</label>
+            <input type="text" id="username" name="username" required>
+            <span class="error" id="username-error"></span>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="password-error"></span>
+
+            <label for="password-confirm">Vérification du mot de passe :</label>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+            <span class="error" id="password-confirm-error"></span>
+
+            <fieldset>
+                <legend>Avez vous déjà joué à Elden Ring ?</legend>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="question"> Oui
+                    </label>
+                    <label>
+                        <input type="radio" name="question"> Non
+                    </label>
+                </div>
+            </fieldset>
+
+            <div id="message"></div>
+            <button type="submit" id="submit-button">S'inscrire</button>
+        </form>
+    </section>
+
+    <script src="js/dark_mode.js"></script>
+    <script src="js/formulaire.js"></script>
+
+    <p>.</p>
+
+</body>
+
+</html>

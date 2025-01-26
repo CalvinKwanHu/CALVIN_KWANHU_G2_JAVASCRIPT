@@ -1,0 +1,68 @@
+/* Petits appareils (smartphones) */
+@media (max-width: 576px) {
+
+  /* Styles pour les écrans ≤ 576px */
+
+  /* bg_top_img */
+
+  .bg_top_img {
+    position: relative;
+    height: 50vh;
+  }
+
+  .logo_bottom {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*décale vers le milieu du left*/
+    z-index: 1;
+    /* calque */
+    max-width: 300px;
+  }
+
+  /* perso_classe_txt */
+
+  .perso_classe_txt {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16%;
+  }
+
+  .perso_classe_txt img {
+    width: 140%;
+    height: 140%;
+    margin-left: 4%;
+  }
+
+  .home_end {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .justify-content-between {
+    flex-direction: column;
+  }
+}
+
+/* Moyens appareils (tablettes portrait) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Styles pour les écrans entre 577px et 768px */
+}
+
+/* Tablettes en mode paysage ou petits laptops */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Styles pour les écrans entre 769px et 992px */
+}
+
+/* Laptops et desktops */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Styles pour les écrans entre 993px et 1200px */
+}
+
+/* Grands écrans */
+@media (min-width: 1201px) {
+  /* Styles pour les écrans ≥ 1201px */
+}
